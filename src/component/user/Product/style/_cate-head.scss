@@ -1,0 +1,102 @@
+@import "../../../../style/index.scss";
+.cate-product {
+  &__head {
+  }
+  &__child-cate-ls {
+  }
+  &__child-cate-it {
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 0px 15px 3px 15px;
+    border: 0.3px solid rgba($black2, 0.3);
+  }
+  &__child-cate-li {
+    color: $black;
+    font-size: $font-size-s;
+  }
+  &__content {
+  }
+  &__title {
+    position: relative;
+    display: inline-block;
+    background-color: $primaryColor2;
+    box-shadow: 0px 2px 2px 0 rgba($black, 0.2);
+
+    height: 30px;
+    h5 {
+      display: block;
+      width: auto;
+      height: 100%;
+      color: $white;
+      font-size: $font-size-x;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin: 0;
+      margin-left: 80px;
+      padding: 0 30px;
+      line-height: 30px;
+      background-color: $primaryColor;
+    }
+    &::after {
+      content: " ";
+      z-index: 10;
+      position: absolute;
+      border-top: 30px solid $primaryColor;
+      border-left: 30px solid $primaryColor2;
+      left: 50px;
+      top: 0;
+    }
+  }
+}
+@media screen and (min-width: 0px) {
+  .cate-product {
+    &__title {
+      h5 {
+        font-size: $font-size-e;
+      }
+    }
+    &__child-cate-it {
+      margin-left: 2px;
+      border-radius: 7px;
+      padding: 0px 5px 3px 5px;
+    }
+    &__child-cate-li {
+      font-size: $font-size-s;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .cate-product {
+    &__title {
+      h5 {
+        font-size: $font-size-e;
+      }
+    }
+    &__child-cate-it {
+      margin-left: 2px;
+      border-radius: 7px;
+      padding: 0px 5px 3px 5px;
+    }
+    &__child-cate-li {
+      font-size: $font-size-e;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .cate-product {
+    &__title {
+      h5 {
+        font-size: $font-size-e;
+      }
+    }
+    &__child-cate-it {
+      margin-left: 2px;
+      border-radius: 7px;
+      padding: 0px 5px 3px 5px;
+    }
+    &__child-cate-li {
+      font-size: $font-size-s;
+    }
+  }
+}

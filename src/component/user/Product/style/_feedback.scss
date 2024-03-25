@@ -1,0 +1,46 @@
+@import "../../../../style/index.scss";
+.feedback-slider {
+  position: relative;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 2px 2px 0 rgba($black, 0.2);
+
+  &-outer {
+    position: absolute;
+  }
+  &-item {
+    display: flex;
+    padding: 10px;
+    &__img {
+      img {
+        max-width: 220px;
+        max-height: 280px;
+        border-radius: 10px;
+      }
+    }
+    &__info {
+      margin-left: 10px;
+    }
+  }
+
+  .info__name {
+    font-size: $font-size-xll;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .info__field {
+    font-size: $font-size-s;
+    font-style: oblique;
+    font-weight: 700;
+    color: $primaryColor;
+  }
+  .info__desciption {
+    text-align: justify;
+    font-size: $font-size-s;
+  }
+}

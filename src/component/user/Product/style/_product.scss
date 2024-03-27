@@ -114,7 +114,12 @@
 }
 @media screen and (min-width: 0px) {
   .product {
-    height: 460px;
+    height: auto;
+    &__link {
+    }
+    &__info {
+      margin-bottom: 80px;
+    }
   }
 }
 @media screen and (min-width: 576px) {
@@ -124,7 +129,7 @@
 }
 @media screen and (min-width: 992px) {
   .product {
-    height: 420px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {

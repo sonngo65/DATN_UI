@@ -4,11 +4,11 @@ import { LuPhoneCall } from "react-icons/lu";
 import { BsCart4 } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
 import "./style/_header.scss";
-import MobileHNavbar from "./MobileNavbar";
+import MobileHeader from "./MobileHeader";
 export default function Header() {
   return (
     <div className="header container-fluid">
-      <div className="header__head container d-md-none d-lg-block">
+      <div className="header__head container d-none d-lg-block">
         <div className="row pt-3">
           <div className="col-lg-4 col-md-12 d-flex align-items-center">
             <div className="header__logo">
@@ -91,7 +91,7 @@ export default function Header() {
         </div>
       </div>
       <Navbar />
-      <MobileHNavbar />
+      <MobileHeader />
     </div>
   );
 }

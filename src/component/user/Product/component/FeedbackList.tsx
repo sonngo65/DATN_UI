@@ -12,12 +12,18 @@ export default function FeedbackList({ feedbacks }: FeedbackListProps) {
   const { animation, handleEventClickLeftBtn, handleEventClickRightBtn } =
     useSlider({
       length: feedbacks.length,
-      width: ref.current ? width / 2 : 0,
+      width: ref.current ? width : 0,
     });
   useEffect(() => {
     ref.current && setWidth(ref.current.offsetWidth);
     const getwidth = () => {
-      ref.current && setWidth(ref.current.offsetWidth);
+      if (ref.current) {
+        if (window.innerWidth >= 992) {
+          setWidth(ref.current.offsetWidth / 2);
+        } else {
+          setWidth(ref.current.offsetWidth);
+        }
+      }
     };
     window.addEventListener("resize", getwidth);
     return () => window.removeEventListener("resize", getwidth);
@@ -39,16 +45,18 @@ export default function FeedbackList({ feedbacks }: FeedbackListProps) {
         {feedbacks.map(({ name, img, field, description }) => {
           return (
             <div
-              className="feedback-slider-item "
-              style={{ width: `${width / 2}px` }}
+              className="feedback-slider-item"
+              style={{ width: `${width}px` }}
             >
-              <div className="feedback-slider-item__img">
-                <img src={img} alt={name} />
-              </div>
-              <div className="feedback-slider-item__info">
-                <h5 className="info__name">{name}</h5>
-                <h5 className="info__field">{field}</h5>
-                <p className="info__desciption">{description}</p>
+              <div className="row">
+                <div className="col-12 col-sm-4 feedback-slider-item__img">
+                  <img src={img} alt={name} />
+                </div>
+                <div className="col-12 col-sm-8 feedback-slider-item__info">
+                  <h5 className="info__name">{name}</h5>
+                  <h5 className="info__field">{field}</h5>
+                  <p className="info__desciption">{description}</p>
+                </div>
               </div>
             </div>
           );
@@ -68,15 +76,17 @@ export default function FeedbackList({ feedbacks }: FeedbackListProps) {
           return (
             <div
               className="feedback-slider-item "
-              style={{ width: `${width / 2}px` }}
+              style={{ width: `${width}px` }}
             >
-              <div className="feedback-slider-item__img">
-                <img src={img} alt={name} />
-              </div>
-              <div className="feedback-slider-item__info">
-                <h5 className="info__name">{name}</h5>
-                <h5 className="info__field">{field}</h5>
-                <p className="info__desciption">{description}</p>
+              <div className="row">
+                <div className="col-12 col-sm-4 feedback-slider-item__img">
+                  <img src={img} alt={name} />
+                </div>
+                <div className="col-12 col-sm-8 feedback-slider-item__info">
+                  <h5 className="info__name">{name}</h5>
+                  <h5 className="info__field">{field}</h5>
+                  <p className="info__desciption">{description}</p>
+                </div>
               </div>
             </div>
           );
@@ -96,15 +106,17 @@ export default function FeedbackList({ feedbacks }: FeedbackListProps) {
           return (
             <div
               className="feedback-slider-item "
-              style={{ width: `${width / 2}px` }}
+              style={{ width: `${width}px` }}
             >
-              <div className="feedback-slider-item__img">
-                <img src={img} alt={name} />
-              </div>
-              <div className="feedback-slider-item__info">
-                <h5 className="info__name">{name}</h5>
-                <h5 className="info__field">{field}</h5>
-                <p className="info__desciption">{description}</p>
+              <div className="row">
+                <div className="col-12 col-sm-4 feedback-slider-item__img">
+                  <img src={img} alt={name} />
+                </div>
+                <div className="col-12 col-sm-8 feedback-slider-item__info">
+                  <h5 className="info__name">{name}</h5>
+                  <h5 className="info__field">{field}</h5>
+                  <p className="info__desciption">{description}</p>
+                </div>
               </div>
             </div>
           );

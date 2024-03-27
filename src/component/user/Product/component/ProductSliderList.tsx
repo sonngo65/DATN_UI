@@ -15,12 +15,24 @@ export default function ProductSliderList({ products }: ProductSliderBoxProps) {
   const { animation, handleEventClickLeftBtn, handleEventClickRightBtn } =
     useSlider({
       length: products ? products.length : 0,
-      width: width / 4,
+      width: width,
     });
   useEffect(() => {
     ref.current && setWidth(ref.current.offsetWidth);
     const getwidth = () => {
-      ref.current && setWidth(ref.current.offsetWidth);
+      if (ref.current) {
+        if (window.innerWidth >= 992) {
+          setWidth(ref.current.offsetWidth / 4);
+        } else if (window.innerWidth >= 768) {
+          setWidth(ref.current.offsetWidth / 3);
+        } else if (window.innerWidth >= 576) {
+          setWidth((ref.current.offsetWidth * 3) / 8);
+        } else if (window.innerWidth >= 362) {
+          setWidth((ref.current.offsetWidth * 2) / 3);
+        } else {
+          setWidth(ref.current.offsetWidth);
+        }
+      }
     };
     window.addEventListener("resize", getwidth);
     return () => window.removeEventListener("resize", getwidth);
@@ -41,7 +53,7 @@ export default function ProductSliderList({ products }: ProductSliderBoxProps) {
         <div className="d-flex">
           {products.map((product) => {
             return (
-              <div className="p-1" style={{ width: width / 4 }}>
+              <div className="p-1" style={{ width: `${width}px` }}>
                 <ProductItem {...product} />
               </div>
             );
@@ -60,7 +72,7 @@ export default function ProductSliderList({ products }: ProductSliderBoxProps) {
         <div className="d-flex">
           {products.map((product) => {
             return (
-              <div className="p-1" style={{ width: width / 4 }}>
+              <div className="p-1" style={{ width: `${width}px` }}>
                 <ProductItem {...product} />
               </div>
             );
@@ -79,7 +91,7 @@ export default function ProductSliderList({ products }: ProductSliderBoxProps) {
         <div className="d-flex">
           {products.map((product) => {
             return (
-              <div className="p-1" style={{ width: width / 4 }}>
+              <div className="p-1" style={{ width: `${width}px` }}>
                 <ProductItem {...product} />
               </div>
             );

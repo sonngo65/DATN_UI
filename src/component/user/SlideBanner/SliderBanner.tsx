@@ -21,19 +21,24 @@ export default function SliderBanner() {
     },
   ];
   const { animation, handleEventClickLeftBtn, handleEventClickRightBtn } =
-    useSlider({ length: slideItems.length, width: width / 2 });
-
+    useSlider({ length: slideItems.length, width: width });
   useEffect(() => {
     ref.current && setWidth(ref.current.offsetWidth);
     const getwidth = () => {
-      ref.current && setWidth(ref.current.offsetWidth);
+      if (ref.current) {
+        if (window.innerWidth >= 768) {
+          setWidth(ref.current.offsetWidth / 2);
+        } else {
+          setWidth(ref.current.offsetWidth);
+        }
+      }
     };
     window.addEventListener("resize", getwidth);
     return () => window.removeEventListener("resize", getwidth);
   }, []);
 
   return (
-    <div className="slide-banner " ref={ref}>
+    <div className="slide-banner mt-5 mt-md-0" ref={ref}>
       <div className="slide-banner__btn slide-banner__btn-left">
         <button onClick={handleEventClickLeftBtn}>
           <FaChevronLeft />
@@ -55,10 +60,7 @@ export default function SliderBanner() {
       >
         {slideItems.map((slideItem, index) => {
           return (
-            <div
-              className="slide-banner-item"
-              style={{ width: `${width / 2}px` }}
-            >
+            <div className="slide-banner-item" style={{ width: `${width}px` }}>
               <img src={`./${slideItem.img}`} alt="error" />
             </div>
           );
@@ -76,10 +78,7 @@ export default function SliderBanner() {
       >
         {slideItems.map((slideItem, index) => {
           return (
-            <div
-              className="slide-banner-item"
-              style={{ width: `${width / 2}px` }}
-            >
+            <div className="slide-banner-item" style={{ width: `${width}px` }}>
               <img src={`./${slideItem.img}`} alt="error" />
             </div>
           );
@@ -97,10 +96,7 @@ export default function SliderBanner() {
       >
         {slideItems.map((slideItem, index) => {
           return (
-            <div
-              className="slide-banner-item"
-              style={{ width: `${width / 2}px` }}
-            >
+            <div className="slide-banner-item" style={{ width: `${width}px` }}>
               <img src={`./${slideItem.img}`} alt="error" />
             </div>
           );

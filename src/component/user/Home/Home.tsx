@@ -291,8 +291,8 @@ export default function Home() {
     ],
   };
   return (
-    <div className="body">
-      <div className="banner">
+    <div className="body mt-5 pt-4 pt-md-0 ">
+      <div className="banner d-none d-lg-block">
         <img src="./big_bn_slide.webp" alt="error" />
       </div>
       <div className="container">
@@ -309,7 +309,6 @@ export default function Home() {
           </>
         }
       </div>
-      <Footer />
     </div>
   );
 }

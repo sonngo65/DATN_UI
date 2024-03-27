@@ -12,3 +12,23 @@
     position: absolute;
   }
 }
+@media screen and (min-width: 0px) {
+  .product-sli-ls {
+    height: 440px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .product-sli-ls {
+    height: 430px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product-sli-ls {
+    height: 410px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-sli-ls {
+    height: 390px;
+  }
+}

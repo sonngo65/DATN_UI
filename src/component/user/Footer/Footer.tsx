@@ -8,8 +8,8 @@ export default function Footer() {
     <div className="footer mt-5">
       <div className="footer__head">
         <div className="container">
-          <ul className="footer__head-ls d-flex justify-content-around align-items-center">
-            <li className="footer__head-it d-flex justify-content-center align-items-center">
+          <ul className="footer__head-ls  row list-type-none justify-content-around align-items-center">
+            <li className="footer__head-it mt-2 mt-md-0 col-12 col-md-6 col-lg-3 d-flex justify-content-around align-items-center">
               <div>
                 <MdCurrencyExchange />
               </div>
@@ -18,7 +18,7 @@ export default function Footer() {
                 <strong className="d-block">CHÍNH HÃNG</strong>
               </div>
             </li>
-            <li className="footer__head-it d-flex justify-content-center align-items-center">
+            <li className="footer__head-it mt-2 mt-md-0 col-12 col-md-6 col-lg-3 d-flex justify-content-around align-items-center">
               <div>
                 <GrCart />
               </div>
@@ -27,7 +27,7 @@ export default function Footer() {
                 <strong className="d-block">CHÍNH HÃNG</strong>
               </div>
             </li>
-            <li className="footer__head-it d-flex justify-content-center align-items-center">
+            <li className="footer__head-it mt-2 mt-md-0 col-12 col-md-6 col-lg-3 d-flex justify-content-around align-items-center">
               <div>
                 <TfiHeadphoneAlt />
               </div>
@@ -36,7 +36,7 @@ export default function Footer() {
                 <strong className="d-block">CHÍNH HÃNG</strong>
               </div>
             </li>
-            <li className="footer__head-it d-flex justify-content-center align-items-center">
+            <li className="footer__head-it mt-2 mt-md-0 col-12 col-md-6 col-lg-3 d-flex justify-content-around align-items-center">
               <div>
                 <IoMdCheckmarkCircleOutline />
               </div>

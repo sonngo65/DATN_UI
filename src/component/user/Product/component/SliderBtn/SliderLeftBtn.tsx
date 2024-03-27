@@ -4,11 +4,13 @@ import "./_slider-btn.scss";
 
 export default function SliderLeftBtn({
   handleEventClick,
+  className,
 }: {
   handleEventClick: React.MouseEventHandler;
+  className?: string;
 }) {
   return (
-    <div className="slider-btn left">
+    <div className={`slider-btn left ${className}`}>
       <button onClick={handleEventClick}>
         <FaCaretLeft />
       </button>

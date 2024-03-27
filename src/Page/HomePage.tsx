@@ -1,3 +1,4 @@
+import { Footer } from "../component/user/Footer";
 import Header from "../component/user/Header";
 import Home from "../component/user/Home";
 export default function HomePage() {
@@ -5,6 +6,7 @@ export default function HomePage() {
     <div>
       <Header />
       <Home />
+      <Footer />
     </div>
   );
 }

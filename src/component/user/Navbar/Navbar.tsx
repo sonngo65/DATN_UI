@@ -2,7 +2,7 @@ import "./style/_navbar.scss";
 import SubNavbar from "./SubNavbar";
 export default function Navbar() {
   return (
-    <div className="container d-md-none d-lg-block">
+    <div className="container d-none d-lg-block">
       <div className="cus-navbar">
         <ul className="cus-navbar-list">
           <li className="cus-navbar-item">

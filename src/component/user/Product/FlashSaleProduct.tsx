@@ -67,12 +67,12 @@ export default function FlashSaleProduct() {
 
   return (
     <div className="fl-sale mt-3">
-      <div className="fl-sale__head mb-3">
-        <h2 className="fl-sale__head-title pt-2">
+      <div className=" fl-sale__head row g-2 mb-3">
+        <h2 className="fl-sale__head-title col-12 col-lg-6 pt-2">
           F<MdOutlineFlashOn />
           ASH SALE ONLINE
         </h2>
-        <ul className="fl-sale__head-control-ls list-type-none">
+        <ul className="fl-sale__head-control-ls col-12 col-lg-6 list-type-none">
           <li className="fl-sale__head-control-it active">
             <a href="" className="fl-sale__head-control-li ">
               Dien thoai/Table
@@ -89,7 +89,7 @@ export default function FlashSaleProduct() {
             </a>
           </li>
         </ul>
-        <div className="fl-sale__time">
+        <div className="fl-sale__time col-12 ">
           <span className="bag">
             <span>1</span>
           </span>

@@ -23,9 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 #temp ignore 
-InputGroup/
-Login/
-ProductDetail/
-Selection/
-Signup/
-Payment/
+**/InputGroup
+**/Login
+**/ProductDetail
+**/Selection
+**/Signup
+**/Payment

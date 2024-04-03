@@ -186,7 +186,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }: MobileNavbarProps) {
           </ul>
         </div>
       </div>
-      <Overlay isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Overlay isOpen={isOpen} handleOpen={() => setIsOpen((pre) => !pre)} />
     </>
   );
 }

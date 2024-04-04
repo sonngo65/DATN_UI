@@ -5,6 +5,8 @@ import { BsCart4 } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
 import "./style/_header.scss";
 import MobileHeader from "./MobileHeader";
+import Login from "../Login";
+import Signup from "../Signup";
 export default function Header() {
   return (
     <div className="header container-fluid">
@@ -59,12 +61,14 @@ export default function Header() {
               <li className="header__item list-item-center">
                 <FaRegUserCircle />
                 <div className="d-flex flex-column justify-content-center align-items-start">
-                  <a href="#" className="header__link d-block text-deco-none">
+                  <Login className="header__link d-block text-deco-none" />
+                  <Signup className="header__link d-block text-deco-none" />
+                  {/* <a href="#" className="header__link d-block text-deco-none">
                     Dang ky
                   </a>
                   <a href="#" className="header__link d-block text-deco-none">
                     Dang nhap
-                  </a>
+                  </a> */}
                 </div>
               </li>
             </ul>

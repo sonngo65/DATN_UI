@@ -6,6 +6,7 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 
 import "./_product-detail.scss";
 import { SliderLeftBtn, SliderRightBtn } from "../Product/component/SliderBtn";
+import RelatedProductList from "../Product/component/RelatedProduct/RelatedProductList";
 export default function ProductDetail() {
   const ref = useRef<any>(null);
   const [width, setWidth] = useState(0);
@@ -296,6 +297,7 @@ export default function ProductDetail() {
                   cạnh máy được vát phẳng tạo cảm giác mạnh mẽ, cá tính.
                 </p>
               </div>
+              <RelatedProductList />
             </div>
             <div className="col-12 mt-3 mt-lg-0 col-lg-3">
               <div className="product-special ">

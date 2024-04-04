@@ -15,7 +15,7 @@ export default function Overlay({
     if (ref.current) {
       ref.current.addEventListener("click", handleOpen);
     }
-  }, [ref.current]);
+  }, []);
   return (
     <div className={`overlay ${isOpen ? "open" : ""} ${className}`} ref={ref}>
       {" "}

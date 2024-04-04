@@ -1,4 +1,4 @@
-// import GiftInfo from "../ProductDetail/GiftInfo";
+import GiftInfo from "../ProductDetail/GiftInfo";
 import CartDetailList from "./CartDetailList";
 import "./_cart-detail.scss";
 export default function CartDetail() {
@@ -25,7 +25,7 @@ export default function CartDetail() {
               <button className="del-all-btn d-block w-100 px-2 py-3 text-center mt-3">
                 Xoa tat ca
               </button>
-              {/* <GiftInfo /> */}
+              <GiftInfo />
             </div>
           </div>
         </div>

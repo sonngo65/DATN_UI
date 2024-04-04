@@ -6,6 +6,9 @@ import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Header from "./component/user/Header";
 import HomePage from "./Page/HomePage";
 import ProductDetailPage from "./Page/ProductDetailPage";
+import PaymentPage from "./Page/PaymentPage";
+import CartDetail from "./component/user/Cart/CartDetail";
+import CartDetailPage from "./Page/CartDetailPage";
 
 function App() {
   return <ProductDetailPage />;

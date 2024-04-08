@@ -1,0 +1,143 @@
+import { useState } from "react";
+import "./_news.scss";
+export default function News() {
+  const [newsList, setNewsList] = useState([
+    {
+      id: 1,
+      title: "tuýp quay phim đẹp bằng điện thoại",
+      img: "./new-img-2.webp",
+      createdDay: "30/03/2024",
+      description:
+        "Chúng ta đang sống ở thời đại màn hình phẳng được phát triển rộng rãi ở khắp mọi nơi. Tất cả các thiết bị như tablet (máy tính bảng), laptop, TV, trình duyệt mạng xã hội như Facebook, Tweeter, Youtube, … đều hiển thị video bằng định dạng ngang. Video sản phẩm sẽ không được hoàn hảo, không thể hiện được tổng quan, toàn bộ bố cục, bối cảnh và có một số bất tiện nếu bạn quay ở chế độ quay dọc.",
+    },
+    {
+      id: 2,
+      title: "tuýp quay phim đẹp bằng điện thoại",
+      img: "./news-img-3.webp",
+      createdDay: "30/03/2024",
+      description:
+        "Chúng ta đang sống ở thời đại màn hình phẳng được phát triển rộng rãi ở khắp mọi nơi. Tất cả các thiết bị như tablet (máy tính bảng), laptop, TV, trình duyệt mạng xã hội như Facebook, Tweeter, Youtube, … đều hiển thị video bằng định dạng ngang. Video sản phẩm sẽ không được hoàn hảo, không thể hiện được tổng quan, toàn bộ bố cục, bối cảnh và có một số bất tiện nếu bạn quay ở chế độ quay dọc.",
+    },
+    {
+      id: 3,
+      title: "tuýp quay phim đẹp bằng điện thoại",
+      img: "./news-img-1.webp",
+      createdDay: "30/03/2024",
+      description:
+        "Chúng ta đang sống ở thời đại màn hình phẳng được phát triển rộng rãi ở khắp mọi nơi. Tất cả các thiết bị như tablet (máy tính bảng), laptop, TV, trình duyệt mạng xã hội như Facebook, Tweeter, Youtube, … đều hiển thị video bằng định dạng ngang. Video sản phẩm sẽ không được hoàn hảo, không thể hiện được tổng quan, toàn bộ bố cục, bối cảnh và có một số bất tiện nếu bạn quay ở chế độ quay dọc.",
+    },
+    {
+      id: 4,
+      title: "tuýp quay phim đẹp bằng điện thoại",
+      img: "./news-img-3.webp",
+      createdDay: "30/03/2024",
+      description:
+        "Chúng ta đang sống ở thời đại màn hình phẳng được phát triển rộng rãi ở khắp mọi nơi. Tất cả các thiết bị như tablet (máy tính bảng), laptop, TV, trình duyệt mạng xã hội như Facebook, Tweeter, Youtube, … đều hiển thị video bằng định dạng ngang. Video sản phẩm sẽ không được hoàn hảo, không thể hiện được tổng quan, toàn bộ bố cục, bối cảnh và có một số bất tiện nếu bạn quay ở chế độ quay dọc.",
+    },
+    {
+      id: 5,
+      title: "tuýp quay phim đẹp bằng điện thoại",
+      img: "./news-img-1.webp",
+      createdDay: "30/03/2024",
+      description:
+        "Chúng ta đang sống ở thời đại màn hình phẳng được phát triển rộng rãi ở khắp mọi nơi. Tất cả các thiết bị như tablet (máy tính bảng), laptop, TV, trình duyệt mạng xã hội như Facebook, Tweeter, Youtube, … đều hiển thị video bằng định dạng ngang. Video sản phẩm sẽ không được hoàn hảo, không thể hiện được tổng quan, toàn bộ bố cục, bối cảnh và có một số bất tiện nếu bạn quay ở chế độ quay dọc.",
+    },
+    {
+      id: 6,
+      title: "tuýp quay phim đẹp bằng điện thoại",
+      img: "./news-img-3.webp",
+      createdDay: "30/03/2024",
+      description:
+        "Chúng ta đang sống ở thời đại màn hình phẳng được phát triển rộng rãi ở khắp mọi nơi. Tất cả các thiết bị như tablet (máy tính bảng), laptop, TV, trình duyệt mạng xã hội như Facebook, Tweeter, Youtube, … đều hiển thị video bằng định dạng ngang. Video sản phẩm sẽ không được hoàn hảo, không thể hiện được tổng quan, toàn bộ bố cục, bối cảnh và có một số bất tiện nếu bạn quay ở chế độ quay dọc.",
+    },
+  ]);
+  return (
+    <div className="news my-4">
+      <div className="container">
+        <div className="news-head rounded p-3 bg-white my-3">
+          <div className="row g-1">
+            <div className="col-12 col-md-7">
+              <div className="news-top-1 position-relative">
+                <div className="img">
+                  <img src={newsList[0].img} alt={newsList[0].title} />
+                </div>
+                <div className="info position-absolute">
+                  <div className="title">{newsList[0].title}</div>
+                  <div className="description">{newsList[0].description}</div>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-5">
+              <ul className="news-top-ls list-type-none">
+                {newsList.slice(1, 6).map((newsItem) => {
+                  return (
+                    <li className="news-top-it">
+                      <a
+                        href=""
+                        className="news-top-li  d-flex justify-content-center align-items-center"
+                      >
+                        <div className="img">
+                          {" "}
+                          <div className="img-box">
+                            <img src={newsItem.img} alt={newsItem.title} />
+                          </div>
+                        </div>
+                        <div className="info ps-2">
+                          <div className="title">{newsItem.title}</div>
+                          <div className="created-day">
+                            {newsItem.createdDay}
+                          </div>
+                          <div className="description">
+                            {newsItem.description}
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="news-body rounded p-3 bg-white">
+          <div className="title mb-4">
+            <h5>Tin, Meo ky thuat cong nghe</h5>
+          </div>
+          <div className="all-news">
+            <div className="row g-3">
+              {newsList.map((newItem) => {
+                return (
+                  <div className="col-lg-4 col-sm-6 col-12">
+                    <div className="news-item">
+                      <div className="img">
+                        <img src={newItem.img} alt={newItem.title} />
+                      </div>
+                      <div className="hash-tag px-2 position-relative">
+                        <ul className="hash-tag-ls position-absolute list-type-none d-flex justify-content-center align-items-center">
+                          <li className="hash-tag-it">
+                            <a href="">Cach ket noi wifi</a>
+                          </li>
+                          <li className="hash-tag-it">
+                            <a href="">10 meo ve dien thoai</a>
+                          </li>
+                          <li className="hash-tag-it">
+                            <a href="">bao ve dien thoai</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="info p-3">
+                        <div className="title mb-3">{newItem.title}</div>
+                        <div className="created-day">{newItem.createdDay}</div>
+                        <div className="description">{newItem.description}</div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

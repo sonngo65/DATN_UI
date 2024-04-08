@@ -269,20 +269,20 @@ export default function Home() {
     title: "Feed back",
     feedbacks: [
       {
-        img: "whatsapp-image-2022-03-15-at-9-34-21-am.webp",
+        img: "feedback-img.webp",
         name: "DV Trung Ruồi",
         field: "Diễn viên",
         description:
           "Tháng củ mật, lớ ngớ thế nào lại để bị mất điện thoại, may mắn nhờ đại ca Quang Thắng giới thiệu qua Hoàng Hà Mobile, vừa sắm được máy mới sang sịn mịn mà còn với giá cả phải chăng. Từ nay chỉ tin tưởng mua đồ công nghệ ở Hoàng Hà thôi!!",
       },
       {
-        img: "whatsapp-image-2022-03-15-at-9-34-21-am.webp",
+        img: "feedback-img.webp",
         name: "Ngo son",
         field: "IT",
         description: "rat tot",
       },
       {
-        img: "whatsapp-image-2022-03-15-at-9-34-21-am.webp",
+        img: "feedback-img.webp",
         name: "Ngo son wqe",
         field: "IT",
         description:

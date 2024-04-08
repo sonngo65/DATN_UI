@@ -7,6 +7,8 @@ import "./style/_header.scss";
 import MobileHeader from "./MobileHeader";
 import Login from "../Login";
 import Signup from "../Signup";
+import FixScreen from "./FixScreen";
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <div className="header container-fluid">
@@ -14,15 +16,15 @@ export default function Header() {
         <div className="row pt-3">
           <div className="col-lg-4 col-md-12 d-flex align-items-center">
             <div className="header__logo">
-              <a href="#">
+              <Link to="/">
                 <img src="./logo192.png" alt="" />
-              </a>
+              </Link>
             </div>
             <div className="header__search-box">
               <input
                 className="header__search-box__input"
                 type="text"
-                placeholder="Tu khoa ..."
+                placeholder="Từ khóa ..."
               />
               <CiSearch />
             </div>
@@ -30,13 +32,13 @@ export default function Header() {
           <div className="col-lg-8">
             <ul className="header__list list-type-none">
               <li className="header__item list-item-center">
-                <a href="#" className="header__link">
-                  Cong nghe 24h
-                </a>
+                <Link to="/news" className="header__link">
+                  Công nghệ 24h
+                </Link>
                 <span>|</span>
-                <a href="#" className="header__link">
-                  Khuyen mai
-                </a>
+                <Link to="/product/search" className="header__link">
+                  Khuyến mãi mới
+                </Link>
               </li>
               <li className="header__item">
                 <a href="#" className="header__link list-item-center">
@@ -45,18 +47,18 @@ export default function Header() {
                   </div>
                   <span className="text-start fw-bold">
                     {" "}
-                    Tu van: 0879896115
+                    Tư vấn: 0879896115
                   </span>
                 </a>
               </li>
               <li className="header__item ">
-                <a
-                  href="#"
+                <Link
+                  to="/cart"
                   className="header__link bg-round-white list-item-center"
                 >
                   <BsCart4 />
-                  <span>Gio Hang</span>
-                </a>
+                  <span>Giỏ hàng</span>
+                </Link>
               </li>
               <li className="header__item list-item-center">
                 <FaRegUserCircle />
@@ -96,6 +98,7 @@ export default function Header() {
       </div>
       <Navbar />
       <MobileHeader />
+      <FixScreen />
     </div>
   );
 }

@@ -24,4 +24,8 @@ yarn-error.log*
 
 #temp ignore 
 **/ProductSearch
-
+**/OrderHistory
+**/News
+**/admin
+**/Page/OrderHistoryPage.tsx
+**/Page/NewsPage.tsx

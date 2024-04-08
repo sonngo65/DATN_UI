@@ -10,7 +10,7 @@ import React from "react";
 interface CategoryOuterProps {
   Head: React.FC<{ title: string; childCates?: ChildCate[] }>;
   Body:
-    | React.FC<{ products: Product[] }>
+    | React.FC<{ products: Product[]; className?: string }>
     | React.FC<{ accessories: Accessory[] }>
     | React.FC<{ feedbacks: Feedback[] }>;
 }
@@ -23,12 +23,13 @@ export default function CategoryOuter({ Head, Body }: CategoryOuterProps) {
     products,
     accessories,
     feedbacks,
+    className,
   }: Category) => {
     const HeadProps = { title, childCates };
     return (
       <div className=" mt-4">
         <div className="mb-4">
-          <img src={img} alt="alt" style={{ width: "100%" }} />
+          {img && <img src={img} alt="alt" style={{ width: "100%" }} />}
         </div>
         <Head {...HeadProps} />
         {products && (
@@ -36,6 +37,7 @@ export default function CategoryOuter({ Head, Body }: CategoryOuterProps) {
             products={products ? products : []}
             accessories={[]}
             feedbacks={[]}
+            className={className}
           />
         )}
         {accessories && (

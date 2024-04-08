@@ -81,25 +81,25 @@ export default function Payment() {
           <div className="row g-lg-5">
             <div className="col-12 col-lg-4">
               <div className="title">
-                <h5>Thong tin nhan hang</h5>
+                <h5>Thông tin nhận hàng</h5>
               </div>
               <form action="#">
-                <Input name="full-name" label="ho va ten" />
-                <Input name="phoneNumber" label="so dien thoai" />
-                <Input name="address" label="dia chi" />
+                <Input name="full-name" label="Họ và tên" />
+                <Input name="phoneNumber" label="Số điện thoại" />
+                <Input name="address" label="Địa chỉ" />
 
                 <SelectInput
-                  label="tinh thanh"
+                  label="Tỉnh thành"
                   setOptions={setProvcAddresses}
                   options={provcAddresses}
                 />
                 <SelectInput
-                  label="quan huyen"
+                  label="Quận huyện"
                   setOptions={setProvcAddresses}
                   options={provcAddresses}
                 />
                 <SelectInput
-                  label="xa phuong"
+                  label="Xã phường"
                   setOptions={setProvcAddresses}
                   options={provcAddresses}
                 />
@@ -111,16 +111,16 @@ export default function Payment() {
                     rows={10}
                     className="input w-100"
                   ></textarea>
-                  <label htmlFor="1">Ghi chu</label>
+                  <label htmlFor="1">Ghi chú</label>
                 </div>
               </form>
             </div>
             <div className="col-12 col-lg-4">
               <div className="title">
-                <h5>Van chuyen</h5>
+                <h5>Vận chuyển</h5>
               </div>
               <div className="alert alert-success">
-                <p className="p-0 m-0">Vui long nhap thong tin giao hang</p>
+                <p className="p-0 m-0">Vui lòng nhập thông tin giao hàng</p>
               </div>
               <div className="title"></div>
               <div className="payment-methods">
@@ -133,7 +133,7 @@ export default function Payment() {
                       name="payment"
                     />
                     <label className="ms-2" htmlFor="radio_1">
-                      thanh toan khi nhan hang
+                      Thanh toán khi nhận hàng
                     </label>
                     <div className="icon">
                       <FaMoneyBillAlt />
@@ -147,7 +147,7 @@ export default function Payment() {
                       name="payment"
                     />
                     <label className="ms-2" htmlFor="radio_2">
-                      Thanh toan chuyen khoan Qr
+                      Thanh toán chuyển khoản QR
                     </label>
                     <div className="icon">
                       <i className="icon-pay-2"></i>
@@ -161,7 +161,7 @@ export default function Payment() {
                 {" "}
                 <div className="payment-products">
                   <div className="title">
-                    <h5>Don hang (8 san pham)</h5>
+                    <h5>Đơn hàng ( 8 sản phẩm )</h5>
                   </div>
                   <ul className="payment-products-ls m-0 p-0">
                     <li className="payment-products-it">
@@ -216,22 +216,22 @@ export default function Payment() {
                 <div className="payment-deal py-4 d-flex justify-content-between align-items-center">
                   <div className="input-group w-auto">
                     <input className="input " type="text" id="pay-deal" />
-                    <label htmlFor="pay-deal">Nhap ma giam gia</label>
+                    <label htmlFor="pay-deal">Nhập mã giảm giá</label>
                   </div>
-                  <button className="btn btn-primary">Ap dung</button>
+                  <button className="btn btn-primary">Áp dụng</button>
                   {/* <button className="btn btn-primary" disable>Ap dung</button> */}
                 </div>
                 <div className="payment-price py-4">
                   <p className="d-flex justify-content-between align-items-center ">
-                    Tam tinh: <span>10000000</span>
+                    Tạm tính : <span>10000000</span>
                   </p>
                   <p className="d-flex justify-content-between align-items-center">
-                    phi van chuyen : <span>23132</span>
+                    Phí vận chuyển : <span>23132</span>
                   </p>
                 </div>
                 <div className="payment-total py-4">
                   <p className="d-flex justify-content-between align-items-center">
-                    Tong cong:{" "}
+                    Tổng cộng:{" "}
                     <span className="text-primary d-inline-block">
                       523234234
                     </span>
@@ -240,15 +240,15 @@ export default function Payment() {
                 <div className="payment-btn py-4 d-flex justify-content-between align-items-center">
                   <a className="d-block text-deco-none" href="#">
                     <FaArrowLeft />
-                    <span className="ms-2">Quay ve gio hang</span>
+                    <span className="ms-2">Quay về giỏ hàng </span>
                   </a>
-                  <button className="d-block btn btn-primary">dat hang</button>
+                  <button className="d-block btn btn-primary">Đặt hàng</button>
                 </div>
               </div>
             </div>
             <div className="col-12 d-lg-none d-block my-4">
               <button className="d-block btn btn-primary w-100">
-                dat hang
+                Đặt hàng
               </button>
 
               <a
@@ -256,7 +256,7 @@ export default function Payment() {
                 href="#"
               >
                 <FaArrowLeft />
-                <span className="ms-2 ">Quay ve gio hang</span>
+                <span className="ms-2 ">Quay về giỏ hàng </span>
               </a>
             </div>
           </div>

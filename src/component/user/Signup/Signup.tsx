@@ -19,7 +19,7 @@ export default function Signup({ className }: SignupProps) {
   return (
     <>
       <a href="#" className={className} onClick={handleClickSignup}>
-        Dang ky
+        Đăng ký
       </a>
       <div className={`popup-s position-fixed ${isOpen ? "open" : ""} `}>
         <div className="popup-head">
@@ -27,7 +27,7 @@ export default function Signup({ className }: SignupProps) {
             <img src="./logo192.png" alt="error" />
           </div>
           <div className="title">
-            <h5>Dang Ky</h5>
+            <h5>Đăng ký </h5>
           </div>
           <div className="close" onClick={handleClickClose}>
             <IoMdClose />
@@ -48,13 +48,13 @@ export default function Signup({ className }: SignupProps) {
             </button>
           </form>
           <p>
-            ban da co tai khoan?
+            Bạn đã có tài khoản ?
             <a href="#" className="text-deco-none">
-              Dang ky
+              Đăng ký
             </a>
           </p>
 
-          <p className="mt-4">hoac Signup voi</p>
+          <p className="mt-4">hoặc signup với</p>
           <div className="social-popup">
             <a href="#">
               <img src="facebook.png" alt="error" />

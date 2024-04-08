@@ -182,7 +182,7 @@ export default function FlashSaleProduct() {
           </div>
         </div>
       </div> */}
-      <ProductSliderList products={products} />
+      <ProductSliderList className="fl-sale-prd" products={products} />
     </div>
   );
 }

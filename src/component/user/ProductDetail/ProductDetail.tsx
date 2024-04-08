@@ -11,12 +11,12 @@ export default function ProductDetail() {
   const ref = useRef<any>(null);
   const [width, setWidth] = useState(0);
   const [images, setImages] = useState([
-    { id: 1, img: "./product-detail1.webp", isShow: true },
-    { id: 2, img: "./product-detail2.webp", isShow: false },
-    { id: 3, img: "./product-detail3.webp", isShow: false },
-    { id: 4, img: "./product-detail1.webp", isShow: false },
-    { id: 5, img: "./product-detail2.webp", isShow: false },
-    { id: 6, img: "./product-detail3.webp", isShow: false },
+    { id: 1, img: "../product-detail1.webp", isShow: true },
+    { id: 2, img: "../product-detail2.webp", isShow: false },
+    { id: 3, img: "../product-detail3.webp", isShow: false },
+    { id: 4, img: "../product-detail1.webp", isShow: false },
+    { id: 5, img: "../product-detail2.webp", isShow: false },
+    { id: 6, img: "../product-detail3.webp", isShow: false },
   ]);
   const [slide, setSlide] = useState({
     locate: [0, 4],
@@ -168,7 +168,7 @@ export default function ProductDetail() {
                   <li className="selected">
                     <input type="radio" name="color" id="color_1" />
                     <div className="label">
-                      <img src="./product-detail1.webp" alt="eror" />
+                      <img src="../product-detail1.webp" alt="eror" />
                       <label htmlFor="color_1">trang</label>
                     </div>
                     <div className="sticker">
@@ -178,7 +178,7 @@ export default function ProductDetail() {
                   <li>
                     <input type="radio" name="color" id="color_2" />
                     <div className="label">
-                      <img src="./product-detail2.webp" alt="eror" />
+                      <img src="../product-detail2.webp" alt="eror" />
                       <label htmlFor="color_2">hong</label>
                     </div>
                     <div className="sticker">
@@ -188,7 +188,7 @@ export default function ProductDetail() {
                   <li>
                     <input type="radio" name="color" id="color_3" />
                     <div className="label">
-                      <img src="./product-detail3.webp" alt="eror" />
+                      <img src="../product-detail3.webp" alt="eror" />
                       <label htmlFor="color_3">do</label>
                     </div>
                     <div className="sticker">
@@ -272,7 +272,7 @@ export default function ProductDetail() {
             </div>
             <div className="gift mt-4">
               <span className="gift-img">
-                <img src="./gift.webp" alt="error" />
+                <img src="../gift.webp" alt="error" />
                 <span>Uu dai</span>
               </span>
               - Giảm giá sâu nhiều sản phẩm

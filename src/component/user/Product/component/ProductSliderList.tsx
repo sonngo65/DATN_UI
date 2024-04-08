@@ -8,8 +8,12 @@ import SlideBanner from "../../SlideBanner";
 import { useEffect, useRef, useState } from "react";
 interface ProductSliderBoxProps {
   products: Product[];
+  className?: string;
 }
-export default function ProductSliderList({ products }: ProductSliderBoxProps) {
+export default function ProductSliderList({
+  products,
+  className,
+}: ProductSliderBoxProps) {
   const ref = useRef<HTMLHeadingElement>(null);
   const [width, setWidth] = useState(0);
   const { animation, handleEventClickLeftBtn, handleEventClickRightBtn } =
@@ -18,7 +22,7 @@ export default function ProductSliderList({ products }: ProductSliderBoxProps) {
       width: width,
     });
   useEffect(() => {
-    ref.current && setWidth(ref.current.offsetWidth);
+    ref.current && setWidth(ref.current.offsetWidth / 4);
     const getwidth = () => {
       if (ref.current) {
         if (window.innerWidth >= 992) {
@@ -38,7 +42,7 @@ export default function ProductSliderList({ products }: ProductSliderBoxProps) {
     return () => window.removeEventListener("resize", getwidth);
   }, []);
   return (
-    <div className="product-sli-ls " ref={ref}>
+    <div className={`product-sli-ls ${className}`} ref={ref}>
       <SliderLeftBtn handleEventClick={handleEventClickLeftBtn} />
       <SliderRightBtn handleEventClick={handleEventClickRightBtn} />
       <div

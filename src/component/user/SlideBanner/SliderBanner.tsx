@@ -23,7 +23,7 @@ export default function SliderBanner() {
   const { animation, handleEventClickLeftBtn, handleEventClickRightBtn } =
     useSlider({ length: slideItems.length, width: width });
   useEffect(() => {
-    ref.current && setWidth(ref.current.offsetWidth);
+    ref.current && setWidth(ref.current.offsetWidth / 2);
     const getwidth = () => {
       if (ref.current) {
         if (window.innerWidth >= 768) {

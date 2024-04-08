@@ -15,7 +15,7 @@ export default function FeedbackList({ feedbacks }: FeedbackListProps) {
       width: ref.current ? width : 0,
     });
   useEffect(() => {
-    ref.current && setWidth(ref.current.offsetWidth);
+    ref.current && setWidth(ref.current.offsetWidth / 2);
     const getwidth = () => {
       if (ref.current) {
         if (window.innerWidth >= 992) {

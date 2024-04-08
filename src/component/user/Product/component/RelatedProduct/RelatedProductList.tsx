@@ -7,7 +7,7 @@ export default function RelatedProductList() {
   const [width, setWidth] = useState(0);
   const relatedProducts = [
     {
-      img: "related-product1.webp",
+      img: "../related-product1.webp",
 
       name: "Realme C53 6/128gb cũ",
       rating: 0,
@@ -15,7 +15,7 @@ export default function RelatedProductList() {
       compareToPrice: 3000000,
     },
     {
-      img: "related-product2.webp",
+      img: "../related-product2.webp",
 
       name: "Realme V30T 5G mới",
       rating: 0,
@@ -23,7 +23,7 @@ export default function RelatedProductList() {
       compareToPrice: 3000000,
     },
     {
-      img: "related-product2.webp",
+      img: "../related-product2.webp",
 
       name: "Infinix Note 30 8GB /256GB Lướt như mới",
       rating: 0,
@@ -31,7 +31,7 @@ export default function RelatedProductList() {
       compareToPrice: 3000000,
     },
     {
-      img: "related-product2.webp",
+      img: "../related-product2.webp",
 
       name: "Infinix Note 30 8GB /256GB Lướt như mới",
       rating: 0,

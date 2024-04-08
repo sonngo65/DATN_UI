@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Product from "../../../../model/Product";
 import "../style/_product.scss";
 
@@ -13,7 +14,7 @@ export default function ProductItem({
 }: Product) {
   return (
     <div className="product">
-      <a href="#" className="product__link">
+      <Link to="/product/1" className="product__link">
         <div className="product__img">
           <img src={img} alt={name} />
         </div>
@@ -39,7 +40,7 @@ export default function ProductItem({
             <span className="more">Va 2 KM Khac</span>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

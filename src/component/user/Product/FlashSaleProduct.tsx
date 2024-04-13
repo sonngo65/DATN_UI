@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./style/_fl-sale.scss";
 import { MdOutlineFlashOn } from "react-icons/md";
 import { clear } from "console";
 import useSlider from "../../../custom/useSlider";

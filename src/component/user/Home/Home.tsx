@@ -1,4 +1,3 @@
-import "./style/_home.scss";
 import SlideBanner from "../SlideBanner";
 import { FlashSaleProduct, CategoryOuter } from "../Product";
 import { FlashSearch } from "../Search";

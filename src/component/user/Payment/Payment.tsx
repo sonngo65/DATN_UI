@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import "./_payment.scss";
 import { FaArrowDown, FaArrowLeft, FaMoneyBillAlt } from "react-icons/fa";
 import Overlay from "../../Overlay/Overlay";
 import Selection from "../Selection";

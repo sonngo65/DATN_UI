@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./_news.scss";
 export default function News() {
   const [newsList, setNewsList] = useState([
     {

@@ -1,4 +1,3 @@
-import "./style/_sub-navbar.scss";
 export default function SubNavbar() {
   return (
     <div className="sub-navbar">

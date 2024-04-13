@@ -2,7 +2,6 @@ import { useState } from "react";
 import Overlay from "../../Overlay/Overlay";
 import { IoMdClose } from "react-icons/io";
 import { MdSmartphone } from "react-icons/md";
-import "../../../style/_popup.scss";
 
 interface SignupProps {
   className: string;

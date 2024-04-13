@@ -2,7 +2,6 @@ import { HiOutlineHome } from "react-icons/hi";
 import { BiCategory } from "react-icons/bi";
 import { LuPhoneCall } from "react-icons/lu";
 import { BsCart4 } from "react-icons/bs";
-import "./style/_mobile-navbar.scss";
 import MobileNavbar from "../Navbar/MobileNavbar";
 import { useState } from "react";
 export default function MobileHeader() {

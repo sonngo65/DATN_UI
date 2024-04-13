@@ -1,6 +1,5 @@
 import React from "react";
 import { FaCaretLeft } from "react-icons/fa";
-import "./_slider-btn.scss";
 
 export default function SliderLeftBtn({
   handleEventClick,

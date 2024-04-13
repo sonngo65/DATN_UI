@@ -2,7 +2,6 @@ import { GrCart } from "react-icons/gr";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdCurrencyExchange } from "react-icons/md";
-import "./style/_footer.scss";
 export default function Footer() {
   return (
     <div className="footer mt-5">

@@ -1,5 +1,4 @@
 import { FaRegStar } from "react-icons/fa";
-import "./_related-product.scss";
 interface RelatedProductItemProps {
   img: string;
   name: string;

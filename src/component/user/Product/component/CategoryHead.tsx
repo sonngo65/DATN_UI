@@ -1,5 +1,4 @@
 import { ChildCate } from "../../../../model";
-import "../style/_cate-head.scss";
 interface CategoryHead {
   childCates?: ChildCate[];
   title: string;

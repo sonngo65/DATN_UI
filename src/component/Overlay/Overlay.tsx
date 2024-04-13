@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import "./_overlay.scss";
 interface OverlayProps {
   isOpen: boolean;
   handleOpen: () => void;

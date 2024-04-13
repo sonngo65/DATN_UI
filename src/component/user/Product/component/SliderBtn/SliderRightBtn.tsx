@@ -1,6 +1,5 @@
 import React from "react";
 import { FaCaretRight } from "react-icons/fa";
-import "./_slider-btn.scss";
 export default function SliderRightBtn({
   handleEventClick,
   className,

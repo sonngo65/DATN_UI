@@ -2,7 +2,6 @@ import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import useSlider from "../../../../custom/useSlider";
 import { Product } from "../../../../model";
 import ProductItem from "./ProductItem";
-import "../style/_product-slider-list.scss";
 import { SliderLeftBtn, SliderRightBtn } from "./SliderBtn";
 import SlideBanner from "../../SlideBanner";
 import { useEffect, useRef, useState } from "react";

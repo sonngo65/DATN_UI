@@ -1,4 +1,3 @@
-import "./style/_flash-search.scss";
 export default function FlashSearch() {
   const flashSearchItems = [
     {

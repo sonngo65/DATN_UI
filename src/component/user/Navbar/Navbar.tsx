@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./style/_navbar.scss";
 import SubNavbar from "./SubNavbar";
 import { FaCaretDown } from "react-icons/fa";
 

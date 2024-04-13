@@ -1,5 +1,4 @@
 import { Accessory } from "../../../../model";
-import "../style/_accessory-list.scss";
 interface AccessoryList {
   accessories: Accessory[];
 }

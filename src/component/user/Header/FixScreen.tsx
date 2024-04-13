@@ -1,6 +1,5 @@
 import { IoChatbox, IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
-import "./style/_fix-screen.scss";
 export default function FixScreen() {
   return (
     <div className="fix-screen  p-1 p-lg-2 pt-lg-3 pb-lg-3 d-flex flex-column">

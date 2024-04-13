@@ -1,5 +1,4 @@
 import { FaPlus, FaMinus } from "react-icons/fa";
-import "./_cart-detail-item.scss";
 interface CartDetailItemsProps {
   img: string;
   name: string;

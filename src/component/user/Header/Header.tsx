@@ -3,7 +3,6 @@ import { CiSearch } from "react-icons/ci";
 import { LuPhoneCall } from "react-icons/lu";
 import { BsCart4 } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
-import "./style/_header.scss";
 import MobileHeader from "./MobileHeader";
 import Login from "../Login";
 import Signup from "../Signup";
@@ -17,7 +16,7 @@ export default function Header() {
           <div className="col-lg-4 col-md-12 d-flex align-items-center">
             <div className="header__logo">
               <Link to="/">
-                <img src="./logo192.png" alt="" />
+                <img src="./logo5.png" alt="" />
               </Link>
             </div>
             <div className="header__search-box">
@@ -30,8 +29,8 @@ export default function Header() {
             </div>
           </div>
           <div className="col-lg-8">
-            <ul className="header__list list-type-none">
-              <li className="header__item list-item-center">
+            <ul className="header__list list-type-none ">
+              <li className="header__item list-item-center d-flex my-auto">
                 <Link to="/news" className="header__link">
                   Công nghệ 24h
                 </Link>

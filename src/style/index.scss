@@ -1,6 +1,42 @@
-@import "./_color.scss";
-@import "./_font-size.scss";
-@import "./_mixins.scss";
+// bootstrap
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+//
+@import "./color";
+@import "./font-size";
+@import "./mixins";
+@import "./custom";
+@import "./popup";
+//
+
+@import "../component/user/Header";
+@import "../component/user/Cart";
+@import "../component/user/Footer";
+@import "../component/user/Home";
+@import "../component/user/InputGroup";
+@import "../component/user/Login";
+@import "../component/user/Navbar";
+@import "../component/user/News";
+@import "../component/user/OrderHistory";
+@import "../component/user/Payment";
+@import "../component/user/Product";
+@import "../component/user/Product/component/RelatedProduct";
+@import "../component/user/Product/component/SliderBtn";
+@import "../component/user/ProductDetail";
+@import "../component/user/ProductSearch";
+@import "../component/user/Search";
+@import "../component/user/Selection";
+@import "../component/user/Signup";
+@import "../component/user/SlideBanner";
+
+// admin
+@import "../component/admin/Chart";
+@import "../component/admin/Dashboard";
+@import "../component/admin/Home";
+@import "../component/admin/Navbar";
+@import "../component/admin/Product";
+@import "../component/admin/SideBar";
+@import "../component/admin/TextEditor";
+
 ::-webkit-scrollbar {
   width: 8px;
 }

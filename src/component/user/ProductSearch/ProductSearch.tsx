@@ -3,7 +3,6 @@ import CategoryOuter from "../Product/CategoryOuter";
 import CategoryHead from "../Product/component/CategoryHead";
 import ProductSliderList from "../Product/component/ProductSliderList";
 import ProductList from "../Product/component/ProductList";
-import "./_product-search.scss";
 import { useEffect, useReducer, useRef, useState } from "react";
 import { SliderLeftBtn, SliderRightBtn } from "../Product/component/SliderBtn";
 const CategorySliderProduct = CategoryOuter({

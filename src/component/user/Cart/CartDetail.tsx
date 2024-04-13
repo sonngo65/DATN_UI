@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import GiftInfo from "../ProductDetail/GiftInfo";
 import CartDetailList from "./CartDetailList";
-import "./_cart-detail.scss";
 export default function CartDetail() {
   return (
     <div className="container">

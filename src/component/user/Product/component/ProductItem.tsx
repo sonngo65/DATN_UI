@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Product from "../../../../model/Product";
-import "../style/_product.scss";
 
 export default function ProductItem({
   id,

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import "./style/_slider-banner.scss";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 import { resolve } from "path";
 import useSlider from "../../../custom/useSlider";

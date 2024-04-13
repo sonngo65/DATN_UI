@@ -1,4 +1,3 @@
-import "./_order-history.scss";
 import { FaPencilAlt } from "react-icons/fa";
 import { FaRegUser, FaRegCircleUser } from "react-icons/fa6";
 import { RiFilePaper2Line } from "react-icons/ri";

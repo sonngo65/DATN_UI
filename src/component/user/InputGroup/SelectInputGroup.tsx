@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Option } from "../../../model";
-import "./_input-group.scss";
 import { FaArrowDown } from "react-icons/fa";
 import Selection from "../Selection";
 import Overlay from "../../Overlay/Overlay";

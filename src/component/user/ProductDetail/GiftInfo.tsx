@@ -1,4 +1,3 @@
-import "./_gift.scss";
 export default function GiftInfo() {
   return (
     <div className="gift mt-4">

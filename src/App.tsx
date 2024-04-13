@@ -1,29 +1,24 @@
 import "./App.css";
-import "./style/_custom.scss";
 import "./style/index.scss";
-import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-import Header from "./component/user/Header";
 import HomePage from "./Page/HomePage";
-import ProductDetailPage from "./Page/ProductDetailPage";
-import PaymentPage from "./Page/PaymentPage";
 import CartDetail from "./component/user/Cart/CartDetail";
-import CartDetailPage from "./Page/CartDetailPage";
-import ProductSearchPage from "./Page/ProductSearchPage";
-import NewsPage from "./Page/NewsPage";
 import Payment from "./component/user/Payment";
-import OrderHistoryPage from "./Page/OrderHistoryPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import path from "path";
 import { ProductDetail } from "./component/user/ProductDetail";
 import ProductSearch from "./component/user/ProductSearch";
 import News from "./component/user/News";
 import OrderHistory from "./component/user/OrderHistory";
-
+import AdminHome from "./component/admin/Home";
+import Home from "./component/user/Home";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
     children: [
+      {
+        index: true,
+        element: <Home />,
+      },
       {
         path: "/product/:productId",
         element: <ProductDetail />,
@@ -50,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/payment",
     element: <Payment />,
+  },
+  {
+    path: "/admin",
+    element: <AdminHome />,
   },
 ]);
 function App() {

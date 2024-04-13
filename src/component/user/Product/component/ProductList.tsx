@@ -1,6 +1,5 @@
 import { Product } from "../../../../model";
 import ProductItem from "./ProductItem";
-import "../style/_product-list.scss";
 interface ProductListProps {
   products: Product[];
 }

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import useSlider from "../../../../custom/useSlider";
 import { Feedback } from "../../../../model";
-import "../style/_feedback.scss";
 import { SliderLeftBtn, SliderRightBtn } from "./SliderBtn";
 interface FeedbackListProps {
   feedbacks: Feedback[];

@@ -4,7 +4,6 @@ import { FaRegStar } from "react-icons/fa";
 import { BsCart4 } from "react-icons/bs";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
-import "./_product-detail.scss";
 import { SliderLeftBtn, SliderRightBtn } from "../Product/component/SliderBtn";
 import RelatedProductList from "../Product/component/RelatedProduct/RelatedProductList";
 export default function ProductDetail() {

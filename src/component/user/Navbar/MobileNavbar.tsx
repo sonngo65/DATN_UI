@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./style/_mobi-navbar.scss";
 import Overlay from "../../Overlay/Overlay";
 interface MobileNavbarProps {
   isOpen: boolean;

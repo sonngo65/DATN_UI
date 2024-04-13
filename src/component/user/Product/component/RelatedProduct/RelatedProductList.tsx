@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import RelatedProductItem from "./RelatedProductItem";
-import "./_related-product.scss";
 import { SliderLeftBtn, SliderRightBtn } from "../SliderBtn";
 export default function RelatedProductList() {
   const ref = useRef<any>(null);

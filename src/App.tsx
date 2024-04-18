@@ -10,6 +10,11 @@ import News from "./component/user/News";
 import OrderHistory from "./component/user/OrderHistory";
 import AdminHome from "./component/admin/Home";
 import Home from "./component/user/Home";
+import { Provider } from "react-redux";
+import { applyMiddleware, createStore } from "redux";
+import reducer from "./store/reducer";
+import { thunk } from "redux-thunk";
+import Test from "./test/Test";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,8 +56,13 @@ const router = createBrowserRouter([
     element: <AdminHome />,
   },
 ]);
+const store = createStore(reducer, applyMiddleware(thunk));
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  );
 }
 
 export default App;

@@ -2,7 +2,13 @@ import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic/build/ckeditor";
 import { CKFinder } from "@ckeditor/ckeditor5-ckfinder";
 // import { CKBox } from "@ckeditor/ckeditor5-ckbox";
-export default function () {
+export default function ({
+  id,
+  onChange,
+}: {
+  id: string;
+  onChange: (name: string, value: string | number) => void;
+}) {
   const config = {
     toolbar: {
       items: [
@@ -64,8 +70,7 @@ export default function () {
         }}
         data={"<h1>CheckEditor </h1>"}
         onChange={(event, editor) => {
-          const data = editor.getData();
-          console.log(data);
+          onChange(id, editor.getData());
         }}
       />
     </>

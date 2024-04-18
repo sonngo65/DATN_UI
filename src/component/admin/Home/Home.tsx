@@ -1,3 +1,4 @@
+import CategoryAdd from "../Category/CategoryAdd";
 import Dashboard from "../Dashboard";
 import Navbar from "../Navbar";
 import { ProductUpdate, ProductView } from "../Product";
@@ -17,6 +18,7 @@ export default function Home() {
             <ProductUpdate />
             {/* <ProductView /> */}
             {/* <Dashboard /> */}
+            {/* <CategoryAdd /> */}
           </div>
         </div>
       </div>

@@ -1,0 +1,18 @@
+.notify {
+  top: 40%;
+  height: 70px;
+  background-image: linear-gradient(
+    to right,
+    rgba($danger, 0.1),
+    rgba($danger, 0.8),
+    rgba($danger, 0.8),
+    rgba($danger, 0.1)
+  );
+  text-align: center;
+  h5 {
+    color: rgba(rgb(56, 0, 0), 1);
+
+    line-height: 70px;
+  }
+  z-index: 1001;
+}

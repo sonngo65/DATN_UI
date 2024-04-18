@@ -6,6 +6,8 @@
 @import "./mixins";
 @import "./custom";
 @import "./popup";
+
+@import "../component/Overlay";
 //
 
 @import "../component/user/Header";
@@ -36,7 +38,7 @@
 @import "../component/admin/Product";
 @import "../component/admin/SideBar";
 @import "../component/admin/TextEditor";
-
+@import "../component/admin/Notify";
 ::-webkit-scrollbar {
   width: 8px;
 }
